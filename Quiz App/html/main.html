@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="../css/main.css">
+
+    <script type="module" src="../js/main.js" defer></script>
+    <script src="https://kit.fontawesome.com/48486e09d0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="img-div"><img src="../Images/logo.png" alt=""></div>
+        <div class="sound">
+            <i id="music-on" class="fa-solid fa-volume-high"></i>
+            <i id="music-off" class="fa-solid fa-volume-xmark"></i>
+            <audio src="../audio.mp3" autoplay loop></audio>
+        </div>
+        <div class="question-number-container">
+            <p id="question-number-box"><span id="question-number"></span>/25</p>
+        </div>
+
+        <div class="question-div">
+            <p id="question"></p>
+        </div>
+
+        <div class="timer-div">
+            <p id="timer">00:30</p>
+        </div>
+
+        <div class="question-option-container">
+            <ul class="option-div">
+                <button id="option1" class="option"></button>
+                <button id="option2" class="option"></button>
+                <button id="option3" class="option"></button>
+                <button id="option4" class="option"></button>
+            </ul>
+        </div>
+
+
+        <button id="next-btn">NEXT ></button>
+
+
+    </div>
+</body>
+
+</html>

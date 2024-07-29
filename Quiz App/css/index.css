@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 2rem;
+  background-color: black;
+  font-family: poppins;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 1rem;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  gap: 4rem;
+}
+.img-div {
+  width: 50%;
+}
+
+img {
+  width: 100%;
+  filter: drop-shadow(2px 2px 5px rgb(0, 195, 255));
+}
+
+a {
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.Start-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.8rem;
+  border: none;
+  background: #0ba360;
+  background: linear-gradient(to right, #0ba360, #3cba92);
+  color: white;
+  font-family: inherit;
+  text-align: center;
+  font-size: 1.5rem;
+  box-shadow: 0px 9px 36px -11px #0ba360;
+  width: 20rem;
+  padding: 0.7em;
+  transition: all 0.4s;
+  cursor: pointer;
+  font-weight: 500;
+  height: 4.5rem;
+}
+
+.Start-btn svg {
+  width: 52px;
+  height: 52px;
+}
+
+.Start-btn svg path {
+  fill: white;
+}
+
+.Start-btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.4s;
+}
+
+.Start-btn span:after {
+  content: 'Now';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.7s;
+}
+
+.Start-btn:hover span {
+  padding-right: 3.6rem;
+}
+
+.Start-btn:hover span:after {
+  opacity: 4;
+  right: 0;
+}
+
+#lastScore {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: inherit;
+}
+
+@media (max-width: 1100px) {
+  .img-div {
+    width: 60%;
+  }
+}
+@media (max-width: 700px) {
+  .container {
+    gap: 2rem;
+  }
+  .img-div {
+    width: 90%;
+  }
+  .Start-btn {
+    width: 10rem;
+    font-size: 1rem;
+    gap: 0px;
+    height: 3.5rem;
+  }
+  .Start-btn:hover span {
+    padding-right: 2.5rem;
+  }
+  .Start-btn svg {
+    width: 40px;
+    height: 40px;
+  }
+}
