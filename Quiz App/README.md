@@ -1,2 +1,2 @@
-live link 
+Check project live
 https://quizzestime.netlify.app/
