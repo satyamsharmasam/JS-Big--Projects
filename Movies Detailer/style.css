@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* width: 100%; */
+  font-family: poppins, sans-serif;
+  background-color: rgb(231, 228, 228);
+}
+
+header {
+  margin-inline: auto;
+  max-width: 1600px;
+}
+.head-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 50px;
+  background-color:rgba(0, 9, 24, 0.875);
+  color: white;
+  gap: 10px;
+}
+.head-container h2 span{
+    color: #e2b616;
+}
+.search {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.search-input {
+  width: 300px;
+  border: none;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  outline: none;
+  font-size: 15px;
+  color: rgb(1, 1, 51);
+  border-radius: 2px;
+}
+
+.search .submitBtn {
+  font-size: 13px;
+  padding: 3px 7px;
+  font-family: inherit;
+  font-weight: 600;
+  background-color: #e2b616;
+  border: none;
+  border-radius: 3px;
+}
+
+main{
+  max-width: 1200px;
+  margin: 65px auto;
+  padding: 0px 10px;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-container-div{
+  display: flex;
+  gap: 30px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+ img{
+  object-fit: cover;
+  height: 500px; 
+}
+.content{
+  display: flex;
+  flex-direction: column; 
+  padding: 30px 20px;
+  gap: 25px;
+  text-align: justify;
+}
+.content p,.title{
+  font-weight: 600;
+}
+.content p span{
+  font-weight: initial;
+}
+.content .title,h5,.Genre{
+  align-self: center;
+}
+.content .Rating-num{
+  font-weight: initial;
+}
+
+.Genre{
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  main{
+  height: auto;
+  }
+  img{
+    height: auto;
+  }
+  .head-container {
+    flex-direction: column;
+  }
+  .head-container h2{
+    font-size: 25px;
+  }
+  .search-input {
+    width: 200px;
+    font-size: 16px;
+  }
+  .search {
+    gap: 3px;
+  }
+  .search .submitBtn {
+    font-size: 16px;
+    padding: 2px 4px;
+    font-weight: 600;
+  }
+  main{
+    margin-block:40px ;
+    padding-inline: 15px;
+  }
+  .content-container-div{
+    flex-direction: column;
+    gap: 10px;
+  }
+ 
+  
+}
